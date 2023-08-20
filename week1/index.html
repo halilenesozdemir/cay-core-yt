@@ -1,0 +1,100 @@
+<html lang="tr">
+  <head>
+    <!-- <meta> tags always go inside the <head> element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings. -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Çay-core basic practices" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta author="Halil Enes Özdemir" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nibgat Task 1</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+        .mark{
+            display: inline;
+            background-color: gray;
+            color: #111;
+            text-align: center;
+        }
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <a href="https://www.youtube.com/@cay_core">Youtube</a>
+          <a href="https://github.com/halilenesozdemir">Github</a>
+          <a href="https://halil-enes-ozdemir.medium.com/">Medium</a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="personal-card">
+        <h1 class="personal-card-title">Profil Kartı</h1>
+        <div class="personal-card-info">
+            <div class="personal-card-img-container">
+                <img src="/week1/halil.png" alt="Author's photo" />
+            </div>
+          <h3 class="personal-card-name">Halil Enes Özdemir</h3>
+          <p class="personal-card-hobbies">
+            <h3>Hobilerim</h3>
+            <ul>
+                <li>Rap müzik</li>
+                <li>Futbol</li>
+                <li>Edebiyat</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <article>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni illum reiciendis accusamus repellat corrupti dolor aliquid vitae unde est quis minus voluptas deserunt omnis veniam, ullam explicabo nobis<b>quaerat possimus nemo impedit! Quis dolorem deleniti veritatis ab ad tempora velit officia suscipit aliquam cupiditate</b> 
+        
+        <p>pariatur dolor beatae quibusdam aliquid corporis, iure veniam accusantium quia consectetur enim delectus amet. Ipsa, molestiae harum amet commodi aspernatur tempore odit iusto! Quod, error.</p> Incidunt ipsam harum enim, sequi sint quas, eaque eveniet sapiente maxime animi itaque exercitationem. 
+        <br/>
+        <br/>
+        <span style="color: yellow; padding: 30px; ">Quisquam optio, aut ea consectetur, enim id provident recusandae maxime sint a, exercitationem assumenda aliquam voluptates. Excepturi.</span>
+        <hr style="width:50%; margin: 10px auto; " />
+        <mark class="mark">
+            <p>
+                <strong>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A, odio reiciendis incidunt quod nisi quia!    
+                </strong>
+            </p>
+            </mark>
+            
+      </article>
+    <form  style="display: flex; flex-direction: column; background-color: blueviolet; padding: 30px; gap: 5px;">
+        <label for="firstName">Ad</label>
+        <input name="firstName" >
+        <label for="firstName">Soyad</label>
+        <input name="firstName" >
+        <label for="firstName">Mesaj</label>
+        <textarea placeholder="Mesajı giriniz" name="message" rows="30" cols="20" ></textarea>
+        <button type="button" class="btn" onclick="test()">Bana tıkla</button>
+    </form>
+    </main>
+        <table border="1" style="margin: 0 auto; padding: 20px; background-color: chartreuse;">
+            <tr>
+                <th>Ad</th>
+                <th>Soyad</th>
+            </tr>
+        
+            <tr>
+                <td>Halil Enes </td>
+                <td>Özdemir</td>
+            </tr>
+            <tr>
+                <td>Mehmet Emir</td>
+                <td>Özdemir</td>
+            </tr>
+        </table>
+    <footer>
+      <div class="footer">&#169; Copyright 2023 </div>
+    </footer>
+    <script>
+        function test(){
+            alert("Hello")
+        }
+    </script>
+  </body>
+</html>

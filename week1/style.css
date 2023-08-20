@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  background-color: #3e3e3e;
+}
+
+/* HEADER PART */
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+nav ul:last-child {
+  margin-right: 20px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* MAIN PART */
+main {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  gap: 20px;
+}
+
+article {
+  border: 5px solid #211f1f;
+  margin: 4px;
+  padding: 20px;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.personal-card {
+  background-color: aqua;
+  border-radius: 10%;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+}
+
+.personal-card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.personal-card-img-container {
+  width: 200px;
+  height: 200px;
+}
+
+.personal-card-img-container img {
+  width: 100%;
+  height: auto;
+}
+
+form input {
+  height: 30px;
+}
+form button {
+  padding: 15px 25px;
+  background-color: #777;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.footer {
+  height: 50px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
