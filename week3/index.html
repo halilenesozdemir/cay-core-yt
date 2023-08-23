@@ -4,28 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Çay Core | Hafta 3</title>
-    <style>
-      button {
-        background-color: #444;
-        padding: 10px 20px;
-        user-select: none;
-        border-radius: 8px;
-        color: rgb(100, 255, 130);
-        border: none;
-      }
-      button:hover {
-        opacity: 0.75;
-        cursor: pointer;
-      }
-
-      button:active {
-        transform: translateY(2px);
-      }
-    </style>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <button>Giriş Yap</button>
-    <button>Kayıt Ol</button>
-    <button>Parola Sıfırla</button>
+    <div class="header-container">
+      <div class="header-left-side-container">
+        <img class="logo" src="./halil.png" width="75px" height="75px" alt="Halil Enes Özdemir" />
+        <div class="header-desc-container">
+          <span class="header-title">Halil Enes ÖZDEMİR</span>
+          <span class="header-content">Software Developer</span>
+        </div>
+      </div>
+      <div class="header-menu">
+        <a href="#">Anasayfa</a>
+        <a href="#">Hakkımda</a>
+        <a href="#">İletişim</a>
+      </div>
+      <button onclick="alert('Hello world');">TIKLA</button>
+    </div>
+    <script></script>
   </body>
 </html>
