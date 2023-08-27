@@ -1,0 +1,61 @@
+<html lang="tr">
+  <head>
+    <title>Çay Core | Hafta 5</title>
+  </head>
+  <body>
+    <div style="display: flex; flex-direction: column; width: 300px; gap: 10px">
+      <div>
+        <label for="sayi1">Sayı 1:</label>
+        <input
+          type="number"
+          id="sayi1"
+          value="50"
+          style="border: 2px solid limegreen; outline: none" />
+      </div>
+      <div>
+        <label for="sayi2">Sayı 2:</label>
+        <input
+          type="number"
+          id="sayi2"
+          value="39"
+          style="border: 2px solid limegreen; outline: none" />
+      </div>
+      <button onclick="hesapla('+')">Topla</button>
+      <button onclick="hesapla('-')">Çıkar</button>
+      <button onclick="hesapla('*')">Çarp</button>
+      <button onclick="hesapla('/')">Böl</button>
+      <button onclick="hesapla('**')">Default</button>
+      <div>
+        <label for="result">Toplam:</label>
+        <input
+          type="number"
+          id="result"
+          style="border: 2px solid black" />
+      </div>
+    </div>
+    <script>
+      const sayi1 = document.getElementById("sayi1");
+      const sayi2 = document.getElementById("sayi2");
+      const result = document.getElementById("result");
+
+      function hesapla(type) {
+        switch (type) {
+          case "+":
+            result.value = Number(sayi1.value) + Number(sayi2.value);
+            break;
+          case "-":
+            result.value = Number(sayi1.value) - Number(sayi2.value);
+            break;
+          case "*":
+            result.value = Number(sayi1.value) * Number(sayi2.value);
+            break;
+          case "/":
+            result.value = Number(sayi1.value) / Number(sayi2.value);
+            break;
+          default:
+            result.value = "";
+        }
+      }
+    </script>
+  </body>
+</html>
