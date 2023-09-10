@@ -20,15 +20,6 @@ section#header .logo-container {
   height: 6.5rem;
 }
 
-.logo-container:hover {
-  opacity: 0.87;
-}
-
-.logo-container:active {
-  transform: translateY(2px);
-  transition: transform 0.5s ease-in;
-}
-
 .header-left {
   display: flex;
   gap: 10px;
@@ -60,12 +51,6 @@ section#header .logo-container img {
 .header-right {
   display: flex;
   gap: 1.5rem;
-}
-
-.header-right a:hover {
-  transition: all 0.3s ease;
-  transform: translateY(2px);
-  /* color: #ff001f; */
 }
 
 /* HERO SECTION */
@@ -126,4 +111,31 @@ button.ghost {
   background-color: transparent;
   border: 2px solid transparent;
   color: #ff001f;
+}
+
+/* BROADCAST */
+.broadcast-banner-container {
+  background-image: linear-gradient(90deg, #ff001f 0%, #470009 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inter-semibold;
+  color: white;
+  gap: 10px;
+  padding: 4rem;
+}
+
+/* CLICK EVENT */
+
+.click-event:hover {
+  user-select: none;
+  cursor: pointer;
+  opacity: 0.75;
+  transition: all 0.5s ease;
+}
+
+.click-event:active {
+  transform: translateY(2px);
+  transition: transform 0.3s ease;
+  user-select: none;
 }
