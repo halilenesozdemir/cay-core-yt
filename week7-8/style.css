@@ -1,0 +1,117 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+section#header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+}
+
+section#header .logo-container {
+  width: 6.5rem;
+  height: 6.5rem;
+}
+
+.logo-container:hover {
+  opacity: 0.87;
+}
+
+.logo-container:active {
+  transform: translateY(2px);
+  transition: transform 0.5s ease-in;
+}
+
+.header-left {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+section#header .logo-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-title {
+  font-family: inter-semibold;
+  font-size: 2.2rem;
+  color: #ff001f;
+}
+
+.logo-subtitle {
+  color: #2e2e2e;
+  font-size: 1.8rem;
+}
+
+.header-right {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.header-right a:hover {
+  transition: all 0.3s ease;
+  transform: translateY(2px);
+  /* color: #ff001f; */
+}
+
+/* HERO SECTION */
+section#hero {
+  background: url("assets/images/arkaplan.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  user-select: none;
+  width: 100%;
+  height: 70%;
+}
+
+.hero-filter {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.hero-desc {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: flex-start;
+  bottom: 10%;
+  left: 4rem;
+  width: 40%;
+  color: #fff;
+  gap: 20px;
+}
+
+.hero-title {
+  font-family: inter-regular;
+  font-size: 2.6rem;
+  color: #eee;
+}
+
+.hero-content {
+  font-size: 2.2rem;
+  font-family: inter-light;
+  margin-bottom: 4px;
+  line-height: 2.2rem;
+}
+
+button.hero-button {
+  background-color: #ff001f;
+  color: white;
+}
