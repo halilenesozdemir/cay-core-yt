@@ -76,7 +76,7 @@ section#hero {
   background-size: cover;
   user-select: none;
   width: 100%;
-  height: 70%;
+  height: 70vh;
 }
 
 .hero-filter {
@@ -86,11 +86,11 @@ section#hero {
   height: 100%;
 }
 
-.hero-desc {
+.hero-container {
   display: flex;
   flex-direction: column;
-  position: absolute;
   align-items: flex-start;
+  position: absolute;
   bottom: 10%;
   left: 4rem;
   width: 40%;
@@ -105,13 +105,25 @@ section#hero {
 }
 
 .hero-content {
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   font-family: inter-light;
   margin-bottom: 4px;
   line-height: 2.2rem;
 }
 
-button.hero-button {
+button.filled {
   background-color: #ff001f;
   color: white;
+}
+
+button.outline {
+  background-color: transparent;
+  border: 2px solid #ff001f;
+  color: #ff001f;
+}
+
+button.ghost {
+  background-color: transparent;
+  border: 2px solid transparent;
+  color: #ff001f;
 }
