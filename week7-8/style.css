@@ -143,31 +143,29 @@ button.ghost {
 /* Broadcast Indicator */
 
 .broadcast-indicator-outer {
-  width: 25px;
-  height: 25px;
-  /* background-color: red; */
+  width: 20px;
+  height: 20px;
   border: 1px solid #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+
   flex-shrink: 0;
 }
 
 .broadcast-indicator-inner {
-  width: 10px;
-  height: 10px;
-  background-color: red;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
   border-radius: 50%;
-  border: px solid #ff001f;
-  transform: scale(1);
-  animation: pulse-red 3s infinite;
+  animation: pulse-red 2s infinite;
 }
 
 @keyframes pulse-red {
   0% {
     transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.75);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.75);
   }
 
   70% {
