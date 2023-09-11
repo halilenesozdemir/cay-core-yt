@@ -123,6 +123,7 @@ button.ghost {
   color: white;
   gap: 10px;
   padding: 4rem;
+  margin-bottom: 2rem;
 }
 
 /* CLICK EVENT */
@@ -140,8 +141,6 @@ button.ghost {
   user-select: none;
 }
 
-/* Broadcast Indicator */
-
 .broadcast-indicator-outer {
   width: 20px;
   height: 20px;
@@ -150,7 +149,6 @@ button.ghost {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-
   flex-shrink: 0;
 }
 
@@ -177,4 +175,49 @@ button.ghost {
     transform: scale(0.95);
     box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
   }
+}
+
+.section-title {
+  font-size: 3.4rem;
+  color: #212121;
+  font-family: inter-bold;
+  margin-bottom: 4rem;
+}
+
+.caycore-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  height: 75%;
+  width: 100%;
+  user-select: none;
+}
+
+.caycore-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  max-width: 90%;
+}
+
+@media screen and (max-width: 800px) {
+  .caycore-container {
+    height: auto;
+  }
+  .caycore-content-container {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.caycore-content-logo {
+  height: 30rem;
+  border-radius: 4rem;
+}
+
+.caycore-content-text {
+  text-align: justify;
 }
