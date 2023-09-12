@@ -124,6 +124,7 @@ button.ghost {
   gap: 10px;
   padding: 4rem;
   margin-bottom: 2rem;
+  user-select: none;
 }
 
 /* CLICK EVENT */
@@ -131,7 +132,7 @@ button.ghost {
 .click-event:hover {
   user-select: none;
   cursor: pointer;
-  opacity: 0.75;
+  opacity: 0.8;
   transition: all 0.5s ease;
 }
 
@@ -184,7 +185,7 @@ button.ghost {
   margin-bottom: 4rem;
 }
 
-.caycore-container {
+.section-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -195,7 +196,7 @@ button.ghost {
   user-select: none;
 }
 
-.caycore-content-container {
+.section-content-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -204,10 +205,10 @@ button.ghost {
 }
 
 @media screen and (max-width: 800px) {
-  .caycore-container {
+  .section-container {
     height: auto;
   }
-  .caycore-content-container {
+  .section-content-container {
     justify-content: center;
     flex-direction: column;
   }
@@ -220,4 +221,37 @@ button.ghost {
 
 .caycore-content-text {
   text-align: justify;
+  user-select: text;
+}
+
+.team-component-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.team-component-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-component-content-container span:nth-child(1) {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  font-family: inter-bold;
+}
+.team-component-content-container span:nth-child(2) {
+  font-family: inter-medium;
+  font-size: 1.8rem;
+  color: #737373;
+}
+
+.team-component-container-img {
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
 }
