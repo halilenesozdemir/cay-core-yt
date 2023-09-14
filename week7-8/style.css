@@ -190,8 +190,7 @@ button.ghost {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem;
-  height: 75%;
+  padding: 6rem;
   width: 100%;
   user-select: none;
 }
