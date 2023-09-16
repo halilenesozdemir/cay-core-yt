@@ -8,3 +8,27 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+const sideMenu = document.getElementById("side-menu");
+
+let menuState = false;
+function toggleMenu(event) {
+  console.log(event);
+  menuState = !menuState;
+  if (menuState) {
+    sideMenu.classList.add("isActive");
+  } else {
+    sideMenu.classList.remove("isActive");
+  }
+}
+
+function goTo(path) {
+  if (menuState) {
+    toggleMenu();
+    setTimeout(() => {
+      window.location.href = path;
+    }, 2000);
+  } else {
+    window.location.href = path;
+  }
+}

@@ -4,14 +4,6 @@
   padding: 0;
 }
 
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
-}
-
 section#header {
   display: flex;
   justify-content: space-between;
@@ -59,6 +51,10 @@ section#header .logo-container img {
   gap: 1.5rem;
 }
 
+.header-right a:hover {
+  cursor: pointer;
+}
+
 @font-face {
   font-family: inter-regular;
   src: url("assets/fonts/Inter-Regular.ttf");
@@ -90,6 +86,14 @@ body {
   height: 100%;
   font-family: inter-regular;
   background-color: #efefef;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
 }
 
 a {
@@ -129,6 +133,98 @@ button.ghost {
 
 button.full-width {
   width: 100%;
+}
+
+.mobile-menu-button {
+  padding: 10px;
+  display: none;
+}
+
+.mobile-menu-button:hover {
+  color: #ff001f;
+  cursor: pointer;
+}
+
+.side-menu-container {
+  transform: translateX(-101%);
+  transition: transform 1s;
+  user-select: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.side-menu-container.isActive {
+  transform: translateX(0%);
+  transition: transform 1s;
+}
+
+.side-menu-container a {
+  padding: 5px 20px;
+}
+
+.side-menu-filter {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 99991;
+  height: 100%;
+  width: 100%;
+}
+.side-menu-container > .header-right {
+  position: absolute;
+  z-index: 99992;
+  left: 0;
+  top: 0;
+  width: 40rem;
+  height: 100%;
+  background-color: #dedede;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.side-menu-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0px 20px;
+}
+
+.side-menu-header-container > i {
+  padding: 20px;
+}
+
+.side-menu-header-container > i:hover {
+  color: #ff001f;
+  cursor: pointer;
+}
+
+.side-menu-header-container > span {
+  font-family: inter-semibold;
+  font-size: 24px;
+}
+
+.side-menu-seperator {
+  margin-bottom: 10px;
+}
+
+.seperator {
+  background-color: rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 1px;
+}
+
+@media screen and (max-width: 950px) {
+  .mobile-menu-button {
+    display: block;
+  }
+
+  .header-right {
+    display: none;
+  }
 }
 
 .section-title {

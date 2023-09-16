@@ -23,6 +23,7 @@
 }
 
 .contact-form-send {
+  cursor: pointer;
   margin-top: 2rem;
 }
 

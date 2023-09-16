@@ -1,21 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Çay Core</title>
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="main.css" />
+    <link
+      rel="stylesheet"
+      href="style.css" />
     <script
       src="https://kit.fontawesome.com/5e36563075.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
   </head>
 
   <body>
     <section id="header">
       <div class="header-left click-event">
         <div class="logo-container">
-          <img src="./assets/images/logo.png" alt="" />
+          <img
+            src="./assets/images/logo.png"
+            alt="Çay Core Logo" />
         </div>
 
         <div class="logo-text">
@@ -24,31 +29,41 @@
         </div>
       </div>
       <div class="header-right">
-        <a class="nav-link click-event" id="index" href="/week7-8/index.html"
-          >Anasayfa</a
-        >
+        <a
+          class="nav-link click-event"
+          id="index"
+          onclick="goTo('/week7-8/index.html')">
+          Anasayfa
+        </a>
         <a
           class="nav-link click-event"
           id="aboutus"
-          href="/week7-8/aboutus.html"
-          >Hakkımızda</a
-        >
+          onclick="goTo('/week7-8/aboutus.html')">
+          Hakkımızda
+        </a>
         <a
           class="nav-link click-event"
           id="contact"
-          href="/week7-8/contact.html"
-          >İletişim</a
-        >
+          onclick="goTo('/week7-8/contact.html')">
+          İletişim
+        </a>
+      </div>
+
+      <div
+        class="mobile-menu-button"
+        onclick="toggleMenu(event)">
+        <i class="fa-solid fa-bars fa-xl"></i>
       </div>
     </section>
+
     <section id="hero">
       <div class="hero-filter">
         <div class="hero-container">
-          <span class="hero-title"> Sıfırdan Geliştirici Olmak </span>
+          <span class="hero-title">Sıfırdan Geliştirici Olmak</span>
+
           <span class="hero-content">
-            Her hafta Cumartesi günü akşam saat 19:00 - 21:00 arası “Sıfırdan
-            Geliştirici Olmak” konulu eğitimimiz düzenlenmektedir. Sizleri de
-            aramızda görmekten memnuniyet duyarız.
+            Her hafta Cumartesi günü akşam saat 19:00 - 21:00 arası “Sıfırdan Geliştirici Olmak”
+            konulu eğitimimiz düzenlenmektedir. Sizleri de aramızda görmekten memnuniyet duyarız.
           </span>
           <button class="filled click-event">Eğitime Git</button>
         </div>
@@ -58,36 +73,39 @@
       <div class="broadcast-indicator-outer">
         <div class="broadcast-indicator-inner"></div>
       </div>
-      Yayın akışını görüntüleyin. <i class="fa-solid fa-arrow-right"></i>
+      Yayın akışını görüntüleyin.
+
+      <i class="fa-solid fa-arrow-right"></i>
     </div>
     <section class="section-container">
       <span class="section-title">Çay Core Nedir?</span>
       <div class="section-content-container">
-        <img class="caycore-content-logo" src="assets/images/logo.png" alt="" />
+        <img
+          class="caycore-content-logo"
+          src="assets/images/logo.png"
+          alt="" />
         <p class="caycore-content-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Herro aliquid
-          facilis nam harum. Est nam quas, excepturi quos labore voluptate
-          inventore, architecto consequatur atque iusto debitis a quia ab in
-          maiores, sint delectus! Placeat dolor pariatur sint quibusdam numquam
-          doloribus, a aut optio blanditiis praesentium at illo inventore quos
-          dignissimos eaque, enim suscipit nihil temporibus debitis.
-          Voluptatibus incidunt sequi quae saepe libero qui, totam quis corrupti
-          aliquam. Nobis veritatis, harum culpa fuga aliquam maiores delectus
-          odit recusandae libero! Aut molestiae dolorum officia odit. Ratione,
-          eos blanditiis.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Herro aliquid facilis nam harum.
+          Est nam quas, excepturi quos labore voluptate inventore, architecto consequatur atque
+          iusto debitis a quia ab in maiores, sint delectus! Placeat dolor pariatur sint quibusdam
+          numquam doloribus, a aut optio blanditiis praesentium at illo inventore quos dignissimos
+          eaque, enim suscipit nihil temporibus debitis. Voluptatibus incidunt sequi quae saepe
+          libero qui, totam quis corrupti aliquam. Nobis veritatis, harum culpa fuga aliquam maiores
+          delectus odit recusandae libero! Aut molestiae dolorum officia odit. Ratione, eos
+          blanditiis.
         </p>
       </div>
     </section>
 
     <section class="section-container">
       <span class="section-title">Biz Kimiz?</span>
+
       <div class="section-content-container">
         <div class="team-component-container">
           <img
             class="team-component-container-img"
             src="assets/images/team/halil.png"
-            alt=""
-          />
+            alt="" />
           <div class="team-component-content-container">
             <span>Halil Enes ÖZDEMİR</span>
             <span>Eğitim & Oyun</span>
@@ -97,19 +115,62 @@
           <img
             class="team-component-container-img"
             src="assets/images/team/timbernerslee.jpg"
-            alt=""
-          />
+            alt="" />
           <div class="team-component-content-container">
             <span>Tim Berners Lee</span>
-            <span>IT & İdari İşler </span>
+            <span>IT & İdari İşler</span>
           </div>
         </div>
       </div>
     </section>
     <section class="footer-container">
-      <img src="assets/images/nlogo.png" class="footer-logo" alt="" />
+      <a
+        href="https://www.nibgat.com/#"
+        target="_blank">
+        <img
+          src="assets/images/nlogo.png"
+          class="footer-logo"
+          alt="Nibgat Logo" />
+      </a>
+
       <span id="copyright-text"></span>
     </section>
+
+    <div
+      id="side-menu"
+      class="side-menu-container">
+      <div
+        class="side-menu-filter"
+        onclick="toggleMenu()"></div>
+      <div class="header-right">
+        <div class="side-menu-header-container">
+          <span>Menü</span>
+          <i
+            class="fas fa-x"
+            onclick="toggleMenu()"></i>
+        </div>
+        <div class="seperator side-menu-seperator"></div>
+        <a
+          class="nav-link click-event"
+          id="index"
+          onclick="goTo('/week7-8/index.html')">
+          Anasayfa
+        </a>
+        <a
+          class="nav-link click-event"
+          id="aboutus"
+          onclick="goTo('/week7-8/aboutus.html')">
+          Hakkımızda
+        </a>
+        <a
+          class="nav-link click-event"
+          id="contact"
+          onclick="goTo('/week7-8/contact.html')">
+          İletişim
+        </a>
+      </div>
+    </div>
+
     <script src="main.js"></script>
     <script src="menu.js"></script>
   </body>
