@@ -349,8 +349,21 @@ button.full-width {
   padding: 20px 30px;
   background-color: white;
   user-select: none;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .footer-logo {
+  animation: nibgatLogo 1s infinite linear;
   height: 7.5rem;
+}
+
+@keyframes nibgatLogo {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-360deg);
+  }
 }

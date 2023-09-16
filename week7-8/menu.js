@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const sideMenu = document.getElementById("side-menu");
+const footerContainer = document.getElementById("footer-container");
 
 let menuState = false;
 function toggleMenu(event) {
@@ -32,3 +33,11 @@ function goTo(path) {
     window.location.href = path;
   }
 }
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 0) {
+    footerContainer.style.position = "relative";
+  } else {
+    footerContainer.style.position = "fixed";
+  }
+});
