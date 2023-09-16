@@ -1,23 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Week 6</title>
   </head>
   <body>
     <div id="buttons"></div>
     <script>
-        const buttonContainerDiv = document.getElementById("buttons")
-        const totalDataCount = 89;
-        const dataPerPage = 10;
-        const paginateButtonCount = Math.ceil(totalDataCount / dataPerPage);
+      const buttonContainerDiv = document.getElementById("buttons");
+      const totalDataCount = 89;
+      const dataPerPage = 10;
+      const paginateButtonCount = Math.ceil(totalDataCount / dataPerPage);
 
-        for(let i=1;i<=paginateButtonCount;i++){
-            buttonContainerDiv.innerHTML += `<button>${i}</button>`
-        }
+      for (let i = 1; i <= paginateButtonCount; i++) {
+        buttonContainerDiv.innerHTML += `<button>${i}</button>`;
+      }
     </script>
   </body>
 </html>
