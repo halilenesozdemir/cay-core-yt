@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll(".nav-link");
   const pathname = window.location.pathname;
+  console.log(window.location);
 
   navLinks.forEach((link) => {
     if (link.getAttribute("href") === pathname) {
