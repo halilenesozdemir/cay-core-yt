@@ -132,7 +132,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   padding: 3rem;
-  gap: 0.5rem;
+  gap: 2rem;
 }
 
 .blog-posts .blog-post {
@@ -146,7 +146,8 @@ body {
 
 .blog-img-container {
   width: 250px;
-  height: 250px;
+  height: 140px;
+  margin-bottom: 30px;
 }
 .blog-img-container img {
   width: 100%;
